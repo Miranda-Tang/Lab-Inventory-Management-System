@@ -11,4 +11,4 @@ Furthermore, this database-driven application efficiently manages and analyzes p
 [Click](https://www.students.cs.ubc.ca/~mtang78/labInventory/login/index.php) to see the demo.
 
 
-![LabInventory](https://media.github.students.cs.ubc.ca/user/18573/files/a1818ce8-1359-41fb-8475-3de04806b6a9)
+<img width="1504" alt="iShot_2023-06-24_15 15 24" src="https://github.com/Miranda-Tang/Lab-Inventory-Management-System/assets/81618041/3f5f9531-a4d6-4c8a-99b5-639c7b1d2499">
