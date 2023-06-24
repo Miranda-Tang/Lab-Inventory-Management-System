@@ -1,12 +1,12 @@
 <div style="font-size: 25px;
-              width: auto;
-              padding: 10px;
-              text-align: center;
-              font-family: 'Arial, Helvetica, sans-serif';
-              color:floralwhite;
-              border-style: solid;
-              border: 5px;
-              background-color: green">
+            width: auto;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Arial, Helvetica, sans-serif';
+            color:floralwhite;
+            border-style: solid;
+            border: 5px;
+            background-color: green">
     <?php
     echo $vendor;
     ?>

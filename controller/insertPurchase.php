@@ -1,5 +1,5 @@
 <div class="insertPurchase" style="text-align: center;
-        color: #6A4C9C;
+        color: #594f4f;
         align-items: center;
         font-family: 'Press Start 2P';
         font-size: 30px;">

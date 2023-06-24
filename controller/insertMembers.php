@@ -1,5 +1,5 @@
 <div class="insertMembers" style="text-align: center;
-        color: #6A4C9C;
+        color: #594f4f;
         align-items: center;
         font-family: 'Press Start 2P';
         font-size: 30px;">
@@ -14,7 +14,7 @@
     Phone: <input type="text" name="Phone"> <br /><br />
     <input type="submit" value="insertMembers" name="insertMembers"></p>
 </form>
-
+<br>
 <form method="POST" ,action="main.php" style="text-align: center;">
     <input type="hidden" id="insertQueryRequest" name="insertQueryRequest">
     Old User ID: <input type="text" name="oldUserID"> <br /><br />

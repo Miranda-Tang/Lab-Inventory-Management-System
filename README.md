@@ -1,4 +1,4 @@
-# Lab Inventory Database
+# Lab Inventory Management System
 
 ## Introduction
 
@@ -8,7 +8,7 @@ Furthermore, this database-driven application efficiently manages and analyzes p
 
 ## Demo
 
-Link: https://www.students.cs.ubc.ca/~shumin11/labInventory/controller/main.php
+[Click](https://www.students.cs.ubc.ca/~mtang78/labInventory/login/index.php) to see the demo.
 
 
 ![LabInventory](https://media.github.students.cs.ubc.ca/user/18573/files/a1818ce8-1359-41fb-8475-3de04806b6a9)
