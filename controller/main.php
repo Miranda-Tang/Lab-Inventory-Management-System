@@ -14,7 +14,7 @@
         .toppane {
             width: 100%;
             height: 80px;
-            background-color: #547980;
+            background-color: #A0C49D;
             padding: 10px;
             display: flex;
             justify-content: space-between;
@@ -38,19 +38,19 @@
         .leftpane {
             width: 20%;
             height: 100vh;
-            background-color: #9DE0AD;
+            background-color: #C4D7B2;
         }
 
         .middlepane {
             width: 55%;
             height: 100vh;
-            background-color: #e5fcc2;
+            background-color: #F7FFE5;
         }
 
         .rightpane {
             width: 25%;
             height: 100vh;
-            background-color: #9DE0AD;
+            background-color: #E1ECC8;
         }
 
         body {
@@ -160,7 +160,7 @@
         //echo "<br>running ".$cmdstr."<br>";
         global $db_conn, $success;
 
-        $statement = OCIParse($db_conn, $cmdstr);
+        $statement = oci_parse($db_conn, $cmdstr);
         //There are a set of comments at the end of the file that describe some of the OCI specific functions and how they work
 
         if (!$statement) {
@@ -170,7 +170,7 @@
             $success = False;
         }
 
-        $r = OCIExecute($statement, OCI_DEFAULT);
+        $r = oci_execute($statement, OCI_DEFAULT);
         if (!$r) {
             echo "<br>Cannot execute the following command: " . $cmdstr . "<br>";
             $e = oci_error($statement); // For OCIExecute errors pass the statementhandle
@@ -189,7 +189,7 @@
 		See the sample code below for how this function is used */
 
         global $db_conn, $success;
-        $statement = OCIParse($db_conn, $cmdstr);
+        $statement = oci_parse($db_conn, $cmdstr);
 
         if (!$statement) {
             echo "<br>Cannot parse the following command: " . $cmdstr . "<br>";
@@ -202,11 +202,11 @@
             foreach ($tuple as $bind => $val) {
                 //echo $val;
                 //echo "<br>".$bind."<br>";
-                OCIBindByName($statement, $bind, $val);
+                oci_bind_by_name($statement, $bind, $val);
                 unset($val); //make sure you do not remove this. Otherwise $val will remain in an array object wrapper which will not be recognized by Oracle as a proper datatype
             }
 
-            $r = OCIExecute($statement, OCI_DEFAULT);
+            $r = oci_execute($statement, OCI_DEFAULT);
             if (!$r) {
                 echo "<br>Cannot execute the following command: " . $cmdstr . "<br>";
                 $e = OCI_Error($statement); // For OCIExecute errors, pass the statementhandle
@@ -224,7 +224,7 @@
 
         // Your username is ora_(CWL_ID) and the password is a(student number). For example,
         // ora_platypus is the username and a12345678 is the password.
-        $db_conn = OCILogon("ora_mtang78", "a13159264", "dbhost.students.cs.ubc.ca:1522/stu");
+        $db_conn = oci_connect("ora_mtang78", "a13159264", "dbhost.students.cs.ubc.ca:1522/stu");
 
         if ($db_conn) {
             debugAlertMessage("Database is Connected");
@@ -242,13 +242,12 @@
         global $db_conn;
 
         debugAlertMessage("Disconnect from Database");
-        OCILogoff($db_conn);
+        oci_close($db_conn);
     }
 
 
     function displayFromDB($table, $mode, $value)
     {
-        global $db_conn;
         if (connectToDB()) {
             echo '<table class="dispTable" style="
                    width: 100%;
@@ -462,7 +461,7 @@
                     break;
             }
             if (executePlainSQL($plainSQL)) {
-                OCICommit($db_conn);
+                oci_commit($db_conn);
                 echo '<br>' . $val1 . ' has been added to the database. Please refresh the page by clicking ' . $table . ' button to get updated table.
                 <br>';
             } else {
@@ -480,7 +479,6 @@
         if (connectToDB()) {
             switch ($table) {
                 case "Vendors":
-
                     $plainSQL = "DELETE from " . $table . " WHERE Name='" . $value . "'";
                     break;
                 case "Purchase":
@@ -491,7 +489,7 @@
             }
             if (executePlainSQL($plainSQL)) {
 
-                if (OCICommit($db_conn)) {
+                if (oci_commit($db_conn)) {
                     echo  '<br>' . $value . " in " . $table . " has been successfully DELETED! <br>";
                 };
             }
