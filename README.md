@@ -24,3 +24,10 @@ Our Lab Inventory Database is a comprehensive solution designed to help research
   <img src="demo/demo 2.png" alt="Image 2" style="max-width: 45%; flex-shrink: 1;">
   <img src="demo/demo 3.png" alt="Image 3" style="max-width: 45%; flex-shrink: 1;">
 </div>
+
+<div align="center">
+   <img src="demo/demo 1.png"  height=250>
+</div>
+<div align="center">
+   <img src="demo/demo 2.png"  height=250><img src="demo/demo 3.png" height=250>
+</div>
