@@ -17,9 +17,10 @@ Our Lab Inventory Database is a comprehensive solution designed to help research
 
 ## 📸 Demo Pictures
 
-<div align="center">
-   <img src="https://github.com/Miranda-Tang/Lab-Inventory-Management-System/assets/81618041/3f5f9531-a4d6-4c8a-99b5-639c7b1d2499">
+<div style="text-align: center;">
+  <img src="demo/demo 1.png" alt="Image 1" style="width: 100%;">
 </div>
-<div align="center">
-   <img src="https://github.com/Miranda-Tang/Lab-Inventory-Management-System/assets/81618041/d46f104b-2680-42e1-a036-ce6ecf4a3cb4"><img src="https://github.com/Miranda-Tang/Lab-Inventory-Management-System/assets/81618041/28958e98-aad5-41fb-8991-600569cfbc67">
+<div style="display: flex; justify-content: center;">
+  <img src="demo/demo 2.png" alt="Image 2" style="flex: 1;">
+  <img src="demo/demo 3.png" alt="Image 3" style="flex: 1;">
 </div>
