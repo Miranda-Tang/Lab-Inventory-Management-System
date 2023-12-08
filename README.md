@@ -18,9 +18,9 @@ Our Lab Inventory Database is a comprehensive solution designed to help research
 ## 📸 Demo Pictures
 
 <div align="center">
-   <img src="demo/demo 1.png" style="width: 100%; max-height: 400px;">
+   <img src="demo/demo 1.png"  style="width: 100%; max-height: 400px;">
 </div>
 <div align="center">
-   <img src="demo/demo 2.png" style="max-width: 45%; max-height: 400px;">
-   <img src="demo/demo 3.png" style="max-width: 45%; max-height: 400px;">
+   <img src="demo/demo 2.png"  style="width: 45%; max-height: 400px;">
+   <img src="demo/demo 3.png" style="width: 55%; max-height: 400px;">
 </div>
