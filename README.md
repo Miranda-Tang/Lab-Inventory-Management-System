@@ -11,10 +11,6 @@ Our Lab Inventory Database is a comprehensive solution designed to help research
 - Supports advanced analysis through nested aggregation, displaying items with quantities below the average.
 - Streamlines the tracking of purchase dates from all vendors.
 
-## 📝 ER Diagram
-
-![MileStone 1 - ER drawio](https://github.com/Miranda-Tang/Lab-Inventory-Management-System/assets/81618041/17024cf1-f53c-4c25-afa3-f5220041d19c)
-
 ## 📸 Demo Pictures
 
 <div align="center">
@@ -24,3 +20,7 @@ Our Lab Inventory Database is a comprehensive solution designed to help research
    <img src="demo/demo 2.png" style="max-width: 45%; height: 475px;">
    <img src="demo/demo 3.png" style="max-width: 55%; height: 475px;">
 </div>
+
+## 📝 ER Diagram
+
+![MileStone 1 - ER drawio](https://github.com/Miranda-Tang/Lab-Inventory-Management-System/assets/81618041/17024cf1-f53c-4c25-afa3-f5220041d19c)
